@@ -1,0 +1,12 @@
+{
+  "name": "My-Portfolio-5-React-FullStack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["React", "Portfolio"],
+  "author": "Elijah Romer",
+  "license": "MIT"
+}
