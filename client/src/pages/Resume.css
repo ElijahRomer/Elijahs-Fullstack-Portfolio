@@ -1,0 +1,16 @@
+iframe {
+  width: 90%;
+  min-height: 600px;
+  object-fit: contain;
+}
+
+.download {
+  text-decoration: none;
+  color: gold;
+  transition: color 0.3s;
+}
+.download:hover {
+  text-decoration: none;
+  color: rgb(184, 156, 0);
+  transition: color 0.3s;
+}

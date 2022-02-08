@@ -1,0 +1,7 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../images/backgroundColorSplash.jpg');
+  background-size: cover;
+}

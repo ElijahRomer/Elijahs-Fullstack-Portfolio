@@ -1,0 +1,89 @@
+.wandir {
+  background-image: url('../images/wandir.jpg');
+  background-size: cover;
+  height: 500px;
+  transition: 0.3s box-shadow;
+}
+.wandir:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.timed-quiz {
+  background-image: url('../images/timedQuiz.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  transition: 0.3s box-shadow;
+}
+
+.timed-quiz:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.weather-dashboard {
+  background-image: url('../images/weatherDashboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  transition: 0.3s box-shadow;
+}
+
+.weather-dashboard:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.employee-database {
+  background-image: url('../images/employeeDatabase.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  transition: 0.3s box-shadow;
+}
+
+.employee-database:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.the-tech-blog {
+  background-image: url('../images/techBlog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  transition: 0.3s box-shadow;
+}
+
+.the-tech-blog:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.readme-generator {
+  background-image: url('../images/readmeGenerator.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  transition: 0.3s box-shadow;
+}
+
+.readme-generator:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
+.repo-link {
+  text-decoration: none;
+  color: Yellow;
+  transition: color 0.3s;
+  font-size: larger;
+}
+
+.repo-link:hover {
+  text-decoration: none;
+  color: rgb(209, 178, 0);
+  transition: color 0.3s;
+  font-size: larger;
+}
