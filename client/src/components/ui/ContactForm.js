@@ -12,6 +12,7 @@ function ContactForm() {
   const [messageValue, setMessageValue] = useState('');
 
   function setFormField(e) {
+    // eslint-disable-next-line default-case
     switch (e.target.type) {
       case 'text':
         console.log(`TEXT CHANGE REGISTERED`);
@@ -69,7 +70,7 @@ function ContactForm() {
     setMessageInputInvalid(false);
   }
 
-  function handleFormSubmit(e) {
+  async function handleFormSubmit(e) {
     e.preventDefault();
     console.log(nameInputInvalid);
     console.log(emailInputInvalid);
@@ -91,6 +92,16 @@ function ContactForm() {
       message: messageValue,
     };
     console.log(messageData);
+
+
+    const serverURL = "http://localhost:3001/"
+    const response = await fetch(serverURL, {
+      method: 'POST',
+      body: JSON.stringify(messageData)
+    })
+
+    console.log(response)
+
     return true;
   }
 
