@@ -97,13 +97,10 @@ function ContactForm() {
     const serverURL = "http://localhost:3001/"
     const response = await fetch(serverURL, {
       method: 'POST',
-      // mode: 'cors',
       headers: {
-        // 'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      // body: messageData
-      body: JSON.stringify({ "test": "test" })
+      body: JSON.stringify(messageData)
     })
 
     console.log(response)
