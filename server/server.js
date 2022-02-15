@@ -17,7 +17,7 @@ oAuth2Client.setCredentials({
   refresh_token: REFRESH_TOKEN
 })
 
-const sendMail = async (senderEmail, subject, body) => {
+const sendMail = async (senderName, senderEmail, message) => {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -34,11 +34,25 @@ const sendMail = async (senderEmail, subject, body) => {
     });
 
     const mailOptions = {
-      from: 'ELIJAHAROMER <elijaharomer@gmail.com>',
+      from: 'PORTFOLIO CONTACT FORM <elijaharomer@gmail.com>',
       to: 'elijaharomer@gmail.com',
-      subject: "Hello from gmail using API",
-      text: 'Hello from gmail email using API',
-      html: '<h1>Hello from gmail email using API</h1>'
+      subject: `${senderName} has reached out via your Portfolio Contact Form.`,
+      text: `An individual has reached out via the contact form on your portfolio. Details as follows:
+        name: ${senderName}
+        email: ${senderEmail}
+        message: ${message}
+
+        They are awaiting your reply at the contact email above.
+      `,
+      html: `<h2>An individual has reached out via the contact form on your portfolio. Details as follows:</h2>
+      <ul>
+        <li>Name: ${senderName}</li>
+        <li>Email: ${senderEmail}</li>
+        <li>Message: ${message}</li>
+      </ul>
+
+      <p>They are awaiting your reply at the contact email above.<p>
+    `
     };
 
     const result = await transport.sendMail(mailOptions)
@@ -49,11 +63,6 @@ const sendMail = async (senderEmail, subject, body) => {
     return err;
   }
 }
-
-// console.log(`CLIENT_ID:`, CLIENT_ID)
-// console.log(`CLIENT_SECRET:`, CLIENT_SECRET)
-// console.log(`REDIRECT_URI:`, REDIRECT_URI)
-// console.log(`REFRESH_TOKEN:`, REFRESH_TOKEN)
 
 const PORT = process.env.PORT || 3001;
 
@@ -68,7 +77,16 @@ app.use(cors({
 app.post('/', (req, res) => {
   console.log(`POST RECEIVED`)
   console.log(req.body)
-  sendMail()
+
+  let name = req.body.name;
+  let email = req.body.email;
+  let message = req.body.message;
+
+  console.log(`NAME: `, name)
+  console.log(`EMAIL: `, email)
+  console.log(`MESSAGE: `, message)
+
+  sendMail(name, email, message)
     .then(result => {
       console.log(`Email sent...`, result)
       res.json({ msg: 'email sent successfully.' })
