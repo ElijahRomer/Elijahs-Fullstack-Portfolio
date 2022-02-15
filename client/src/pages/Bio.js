@@ -14,7 +14,7 @@ function BioPage() {
       <BioRow>
         <h1 className="text-center">Hello! I'm Elijah Romer.</h1>
         <div className="row my-2">
-          <LinkContainer to="/Elijahs-Portfolio-React/work">
+          <LinkContainer to="/work">
             <button className="btn btn-primary col-sm-10 col-md-4 mx-auto">
               View my work <i className="fas fa-arrow-right"></i>
             </button>
