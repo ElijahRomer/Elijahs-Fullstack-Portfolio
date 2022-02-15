@@ -1,7 +1,7 @@
 # Elijah Romer's Portfolio Website [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg "Click for more information on the Massachusets Institute of Technology License (MIT)")](https://opensource.org/licenses/MIT)
   
   ## Description
-  This website was created as a way to showcase my biography, resume, and projects in a customizable and deployed website that can be independently viewed from GitHub or LinkedIn.
+  This website was created as a way to showcase my biography, resume, and projects in a customizable and deployed website that can be viewed independently from GitHub or LinkedIn.
 
 ### Technologies Used:
 * React
