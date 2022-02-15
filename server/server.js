@@ -1,4 +1,5 @@
 require(`dotenv`).config();
+const path = require('path');
 
 const express = require('express');
 const cors = require('cors');
@@ -67,8 +68,8 @@ const sendMail = async (senderName, senderEmail, message) => {
 const PORT = process.env.PORT || 3001;
 
 const app = express();
-
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.resolve(__dirname, '../client/build')))
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors({
   origin: ["http://localhost:3000"]
@@ -92,14 +93,18 @@ app.post('/', (req, res) => {
       res.json({ msg: 'email sent successfully.' })
     })
     .catch(err => {
-      console.log(err.message)
+      console.log(`Email NOT sent...`, err.message)
       res.status(500).json({ msg: 'an error occured.' })
     })
 })
 
 app.get('*', (req, res) => {
   console.log(`REQUEST RECEIVED`);
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+
+  const buildFilePath = path.join(__dirname, '../client/build/index.html');
+  console.log(buildFilePath);
+
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
