@@ -4,15 +4,20 @@
   This website was created as a way to showcase my biography, resume, and projects in a customizable and deployed website that can be independently viewed from GitHub or LinkedIn.
 
 ### Technologies Used:
-* Handlebars
+* React
 * Express
 * Bootstrap
 * CSS3
+* Nodemailer
+* OAuth2 Google Authentication
 
-_**Click [HERE](https://elijahromer.herokuapp.com/) to be taken to the deployed website.**_
+_**Click [HERE](https://elijahromer.herokuapp.com/) to be taken to the deployed website, or copy and paste the following URL:**_
+```
+https://elijahromer.herokuapp.com/
+```
 
   
-  ![Portfolio Screenshot](public/images/screenshot.jpg "Portfolio Screenshot")
+  ![Portfolio Screenshot](client/src/images/screenshot.jpg "Portfolio Screenshot")
 
   ---
 ## Table of Contents
@@ -30,7 +35,7 @@ The top navbar displays quick links to the different relevant parts of the websi
 * Clicking on either my name in the top left, or the bio button on the right side, will take you to the main Biography page (same as the landing page).
 * Clicking on the "Work" button will take you to the work page where you can view descriptions, screenshots, and links to my relevant work. 
 * Clicking on the "Resume" button will take you to a page with an embedded PDF of my resume that can be viewed right there, as well as a link to download a PDF file of the resume. 
-* Clicking on the "Contact" button will take you back to the bio page, but scroll down to the contact information section. 
+* Clicking on the "Contact" button will take you to the contact page, which displays all of my relevant contact information as well as a fully functional form to email me directly from the website.
 
 There are also "Scroll to top" buttons on each page for ease of navigation.
 
