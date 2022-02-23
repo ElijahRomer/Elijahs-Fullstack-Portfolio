@@ -1,7 +1,19 @@
+.eco-livin {
+  background-image: url('../images/ecoLivin.png');
+  background-size: cover;
+  height: 500px;
+  transition: 0.3s box-shadow;
+}
+.eco-livin:hover {
+  box-shadow: 2px 2px 4px black, 0 0 25px blue, 0 0 5px rgb(50, 50, 131);
+  transition: 0.3s box-shadow;
+}
+
 .wandir {
   background-image: url('../images/wandir.jpg');
   background-size: cover;
-  height: 500px;
+  background-repeat: no-repeat;
+  height: 300px !important;
   transition: 0.3s box-shadow;
 }
 .wandir:hover {

@@ -1,5 +1,24 @@
 const worksData = [
   {
+    title: 'wandir',
+    workClass: 'wandir',
+    repoLink: 'https://github.com/FullstackNomads/wandir',
+    picLink: 'https://fullstacknomads.herokuapp.com/',
+    description: [
+      'An app for organizing and meeting with other people who are passionate about travel! This project was my first real step into creating an application utilizing MVC architecture. This app was created in a team of four, myself and three others. It utilizes Express, Express-handlebars view engine, Express-session for login persistence via cookies, Sequelize ORM for modeling/ mapping to a custom SQL relational database, Multer and AWS-SDK modules for image uploads, and more.',
+      'I was tasked with building most of the back end & database, and managing the git workflow from individual feature branches on up to the main branch and deployment via Heroku.',
+      'The development of this project truly solidified my understanding of Express servers, middleware, view engines, Object Relational Mapping (ORM), and routing.'
+    ],
+  },
+  {
+    title: 'The Tech Blog',
+    workClass: 'the-tech-blog',
+    repoLink: 'https://github.com/ElijahRomer/TechBlog',
+    picLink: 'https://the-tech-blog-website.herokuapp.com/',
+    description:
+      'This application was created with the intention of being a platform for tech-savvy and interested individuals to collaborate and write about relevant topics that they are studying or involved in. Users can create accounts, make blog posts, leave comments on others and their own blog posts, as well as edit posts and comments.',
+  },
+  {
     title: 'README Generator',
     workClass: 'readme-generator',
     repoLink: 'https://github.com/ElijahRomer/ReadMeGenerator#readme',
@@ -16,14 +35,6 @@ const worksData = [
       'This application was written as a CLI for non-tech users to interact with a database. It provides full CRUD functionality in an intuitive way that does not require a single BASH command to be known. This was an excellent exercise in writing Structured Query Language (SQL) and interfacing a MySql database with NodeJS via the standard MySql2 module. It was also good practice with understanding asynchronous code in Node.js, utilizing both promise and Async/Await syntax. Finally, I gained experience in writing my own libraries of functions and modularizing them for better abstraction, separation of concerns, and achievement of goals.',
   },
   {
-    title: 'The Tech Blog',
-    workClass: 'the-tech-blog',
-    repoLink: 'https://github.com/ElijahRomer/TechBlog',
-    picLink: 'https://the-tech-blog-website.herokuapp.com/',
-    description:
-      'This application was created with the intention of being a platform for tech-savvy and interested individuals to collaborate and write about relevant topics that they are studying or involved in. Users can create accounts, make blog posts, leave comments on others and their own blog posts, as well as edit posts and comments.',
-  },
-  {
     title: 'Timed Quiz',
     workClass: 'timed-quiz',
     repoLink: 'https://github.com/ElijahRomer/TimedQuiz',
@@ -38,18 +49,18 @@ const worksData = [
     picLink: 'https://elijahromer.github.io/WeatherDashboard/',
     description:
       'In this project, I created the classic (cliche?) weather dashboard project to exercise my skills working with promises and API calls, as well as learning the Materialize CSS framework and implementing a responsive UI. I also worked out some logic that plugs in wind direction from the API call into a CSS transition, so the wind pointer provides an accurate visualization. Finally, I gained experience utilizing the browser localStorage to allow for persistent data accross sessions.',
-  },
+  }
 ];
 
 export const featuredWorkData = {
-  title: 'wandir',
-  workClass: 'wandir',
-  repoLink: 'https://github.com/FullstackNomads/wandir',
-  picLink: 'https://fullstacknomads.herokuapp.com/',
+  title: "Eco Livin'",
+  workClass: 'eco-livin',
+  repoLink: 'https://github.com/p3-slayers/ecolivin',
+  picLink: 'http://ecolivin.herokuapp.com/',
   description: [
-    'An app for organizing and meeting with other people who are passionate about travel! This project was my first real step into creating an application utilizing MVC architecture. It was a sprint to complete as much functionality as possible in the span of two weeks, with 3 other team members. A very enjoyable learning experience, it utilizes Express, Express-handlebars view engine, Express-session for login persistence via cookies, Sequelize ORM for modeling/ mapping to a custom SQL relational database, Multer and AWS-SDK modules for image uploads, and more.',
-    'I was tasked with building most of the back end & database, and managing the git workflow from individual feature branches on up to the main branch and deployment via Heroku. As of this writing, the app is 90% complete.',
-    'The development of this project truly solidified my understanding of Express servers, middleware, and routing. I have come to see view-engines as virtually indispensible to modern websites. I also see the immense benefit provided by Object Relational Mapping (ORM) such as Sequelize, and gained a firm grasp on that technology as well.',
+    'An app for managing, networking, and building good sustainable living habits!',
+    'I was tasked with building most of the back end & database, and managing the git workflow from individual feature branches on up to the main branch and deployment via Heroku. I also set up most of the Apollo server and was able to implement image uploads via GraphQL utilizing the Apollo-client-upload NPM Package. I architectured the MongoDB Schema within Mongoose, as well as built the Chat feature utilizing Socket.io for real time updates and messaging. Furthermore, I was able to implement page transitions throughout the website for a more engaging visual experience.',
+    "The development of this project truly solidified my understanding of React, GraphQL/ Apollo, Mongoose and MongoDB, as well as JSON Web Tokens for user authentication. I learned much more about the intricacies of Express and React, as well as implementing animations in a React project. I have come to be a huge fan of MongoDB and Mongoose, as it's ability to plug directly into JavaScript code can make for a more optimized build and ease of use.",
   ],
 };
 
