@@ -41,7 +41,7 @@ app.post('/', (req, res) => {
 
 app.get('*', (req, res) => {
   console.log(`REQUEST RECEIVED`);
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 app.listen(PORT, () => {

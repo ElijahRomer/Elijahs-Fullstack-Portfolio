@@ -95,6 +95,7 @@ function ContactForm() {
 
 
     const serverURL = "https://elijahromer.herokuapp.com/"
+    // const serverURL = "http://localhost:3001/"
     const response = await fetch(serverURL, {
       method: 'POST',
       headers: {
