@@ -50,8 +50,8 @@ function ContactForm() {
   }
 
   function validateEmail(e) {
-    const emailRegex = /^([a-zA-Z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([a-z\.]{2,6})$/;
-    const email = e.target.value;
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const email = e.target.value.toLowerCase();
     console.log(email);
     if (!emailRegex.test(email)) {
       setEmailInputInvalid(true);
@@ -94,8 +94,8 @@ function ContactForm() {
     console.log(messageData);
 
 
-    const serverURL = "https://elijahromer.herokuapp.com/"
-    // const serverURL = "http://localhost:3001/"
+    // const serverURL = "https://elijahromer.herokuapp.com/"
+    const serverURL = "http://localhost:3001/"
     const response = await fetch(serverURL, {
       method: 'POST',
       headers: {
