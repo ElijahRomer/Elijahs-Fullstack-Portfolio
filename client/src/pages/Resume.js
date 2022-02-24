@@ -12,14 +12,14 @@ function ResumePage() {
         <h4 className="download d-flex justify-content-center">
           <a
             className="download "
-            href="https://drive.google.com/file/d/1-cIvP_-kblcVgkxxg0JDdQoVo7LruoJL/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KPyBVdNkHzr--YZxXOq-nerfp8kMP9fE/view"
           >
             Download Here
           </a>
         </h4>
         {/* iframe link must be from the embed url  */}
         <iframe
-          src="https://drive.google.com/file/d/1-cIvP_-kblcVgkxxg0JDdQoVo7LruoJL/preview"
+          src="https://drive.google.com/file/d/1KPyBVdNkHzr--YZxXOq-nerfp8kMP9fE/preview"
           allow="autoplay"
           title="Elijah's Resume"
         ></iframe>
