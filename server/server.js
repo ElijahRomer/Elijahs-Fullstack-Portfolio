@@ -13,7 +13,7 @@ app.use(express.static(path.resolve(__dirname, '../client/build')))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:3000", `https://elijahromer.herokuapp.com/`]
+  origin: ["http://localhost:3000", `https://elijahromer.herokuapp.com/`, `http://elijahromer.herokuapp.com`]
 }))
 
 app.post('/', (req, res) => {

@@ -99,7 +99,8 @@ function ContactForm() {
     const response = await fetch(serverURL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': 'http://elijahromer.herokuapp.com'
       },
       body: JSON.stringify(messageData)
     })
