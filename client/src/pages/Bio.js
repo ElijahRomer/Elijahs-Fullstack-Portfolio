@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Card from '../components/ui/Card';
 import Image from '../components/ui/Image';
 import BioRow from '../components/ui/BioRow';
-import profilePicture from '../images/profilePicture.jpg';
+import profilePicture from '../images/professionalPhoto.jpg';
 import headDown from '../images/headDown.jpg';
 import ScrollToTopBtn from '../components/ui/ScrollToTopBtn';
 
