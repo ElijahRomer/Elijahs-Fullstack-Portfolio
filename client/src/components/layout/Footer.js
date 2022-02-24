@@ -33,7 +33,7 @@ function Footer() {
         <br />
 
         <span className="text-light">
-          © 2021 Elijah Romer. All rights reserved.
+          © 2022 Elijah Romer. All rights reserved.
         </span>
       </div>
     </footer>
