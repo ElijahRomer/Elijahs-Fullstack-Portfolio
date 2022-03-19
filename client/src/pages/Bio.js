@@ -27,7 +27,7 @@ function BioPage() {
         <div className="my-1 col-sm-12 col-lg-8">
           <h4>Who is this guy?</h4>
           <p>
-            I'm a full-stack web developer, and I have devoted the last 9 months
+            I'm a full-stack web developer based out of Sarasota, Fl. I have devoted the last 12 months
             to learning computer science, focusing on contemporary web and
             software development.
           </p>
